@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "StepCounter"
+rootProject.name = "Aether-Walker"
 include(":app")
  
