@@ -3,27 +3,16 @@ package com.example.aether_walker;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ValueAnimator;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import org.jetbrains.annotations.Nullable;
-
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Ref;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
@@ -35,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     public TextView tv_stepsTaken;
 
-    public ImageView bckrnd_img_stepsTaken;
+    public ImageView bckrnd_Img_stepsTaken, step_Img_Progress_Bar, step_Img_Progress_Bar_Overlay;
 
     public Button debug_stepbutton;
 
@@ -45,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     public SensorEventListener stepSensorEventListener;
 
-    public int stepsFromQuest, reqStepsFromQuest, userGold, userCrystal, previousStep, currentStep;
+    public int stepsFromQuest, reqStepsFromQuest, userGold, userCrystal, previousStep, currentStep, debugQuestSteps;
 
     public String userName;
 
@@ -76,11 +65,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //TEMP STEP PARAMS
         totalSteps = 3;
+        debugQuestSteps = 25;
 
         //Initialize Views & add Related Methods:
+        step_Img_Progress_Bar_Overlay = this.findViewById(R.id.step_Img_Progress_Bar_Overlay);
+        step_Img_Progress_Bar = this.findViewById(R.id.step_Img_Progress_Bar);
+
+
         tv_stepsTaken = this.findViewById(R.id.tv_dailystepsTaken);
-        bckrnd_img_stepsTaken = this.findViewById(R.id.bckrnd_img_stepsTaken);
+        bckrnd_Img_stepsTaken = this.findViewById(R.id.bckrnd_img_stepsTaken);
 
         //Initialize debug_stepbutton view
         debug_stepbutton = this.findViewById(R.id.debug_stepbutton);
@@ -101,6 +96,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 previousStep = currentStep-1;
 
                 Log.i("STEPLOG", runCounterAnim());
+                int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
+                step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
+                Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
             }
         });
 

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="1920"
+   viewBox="0 0 285.75 508.00005"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="C:\Users\andre\desktop\Temp_Background.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   sodipodi:docname="LoadingBar_N_Background.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="1920px"
+     inkscape:zoom="0.27464869"
+     inkscape:cx="263.97359"
+     inkscape:cy="1115.9711"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient27895">
+      <stop
+         style="stop-color:#000a18;stop-opacity:1"
+         offset="0"
+         id="stop27889" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.43589744"
+         offset="0.17449766"
+         id="stop27891" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1"
+         id="stop27893" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient26960">
+      <stop
+         style="stop-color:#000a18;stop-opacity:1"
+         offset="0"
+         id="stop26956" />
+      <stop
+         style="stop-color:#a1a362;stop-opacity:1"
+         offset="0.17449766"
+         id="stop27412" />
+      <stop
+         style="stop-color:#14ee00;stop-opacity:1"
+         offset="1"
+         id="stop26958" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient24574">
+      <stop
+         style="stop-color:#175d3e;stop-opacity:1;"
+         offset="0"
+         id="stop24564" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.57254905"
+         offset="0.13582981"
+         id="stop24566" />
+      <stop
+         style="stop-color:#00a600;stop-opacity:1"
+         offset="0.76163149"
+         id="stop24568" />
+      <stop
+         style="stop-color:#305d3e;stop-opacity:0.50196078;"
+         offset="1"
+         id="stop24570" />
+      <stop
+         style="stop-color:#4b5d3e;stop-opacity:0"
+         offset="1"
+         id="stop24572" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient22949-0">
+      <stop
+         style="stop-color:#8fd1d5;stop-opacity:1;"
+         offset="0"
+         id="stop22945" />
+      <stop
+         style="stop-color:#227130;stop-opacity:0.56410259"
+         offset="0.07422367"
+         id="stop23241" />
+      <stop
+         style="stop-color:#8fd1d5;stop-opacity:0;"
+         offset="1"
+         id="stop22947" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient20779-6">
+      <stop
+         style="stop-color:#175d3e;stop-opacity:1;"
+         offset="0"
+         id="stop22672" />
+      <stop
+         style="stop-color:#2c5d3e;stop-opacity:0.57254902;"
+         offset="0.42369166"
+         id="stop22674" />
+      <stop
+         style="stop-color:#2f5d3e;stop-opacity:0.53333333;"
+         offset="0.46474686"
+         id="stop22676" />
+      <stop
+         style="stop-color:#305d3e;stop-opacity:0.50196078;"
+         offset="0.49554604"
+         id="stop22678" />
+      <stop
+         style="stop-color:#4b5d3e;stop-opacity:0"
+         offset="1"
+         id="stop22680" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22949-0"
+       id="linearGradient22943-4"
+       x1="-957.7063"
+       y1="-805.9408"
+       x2="-363.53894"
+       y2="955.7243"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient20779-6"
+       id="linearGradient20781-3"
+       x1="-363.53894"
+       y1="955.7243"
+       x2="-360.52884"
+       y2="-765.08221"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient24574"
+       id="linearGradient23941-7"
+       x1="502.61456"
+       y1="254.63609"
+       x2="576.38538"
+       y2="503.8403"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient26960"
+       id="linearGradient26962"
+       x1="527.3064"
+       y1="449.79044"
+       x2="527.3064"
+       y2="232.75066"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22949-0"
+       id="linearGradient22943-4-6"
+       x1="-957.7063"
+       y1="-805.9408"
+       x2="-363.53894"
+       y2="955.7243"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient20779-6"
+       id="linearGradient20781-3-8"
+       x1="-363.53894"
+       y1="955.7243"
+       x2="-360.52884"
+       y2="-765.08221"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient27895"
+       id="linearGradient27716"
+       gradientUnits="userSpaceOnUse"
+       x1="527.3064"
+       y1="449.79044"
+       x2="527.3064"
+       y2="232.75066" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#8fd1d5;fill-opacity:1;stroke:#184300;stroke-width:0.496734;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect4051"
+       width="292.84216"
+       height="430.65152"
+       x="-1.411621"
+       y="-1.4616309" />
+    <path
+       style="fill:#436e33;stroke:#184300;stroke-width:0.52916669;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m -10.115196,379.56066 76.104805,0.96335 h 164.251511 69.36134 l 1.44503,149.80125 -320.314529,-2.4084 z"
+       id="path2116" />
+    <path
+       style="fill:#8fd173;stroke:#006600;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M -1.9267039,512.50326 65.989609,380.52401 H 230.24112 l 58.76446,132.46091 z"
+       id="path857"
+       sodipodi:nodetypes="ccccc" />
+    <circle
+       id="path4206"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="350.81424"
+       cy="145.09404"
+       r="0.0027007801" />
+    <circle
+       id="path4208"
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       cx="350.81424"
+       cy="145.09404"
+       r="0.0027007801" />
+    <path
+       sodipodi:type="star"
+       style="fill:#183400;fill-opacity:1;stroke:none;stroke-width:32.7084;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4449-8-3"
+       inkscape:flatsided="false"
+       sodipodi:sides="4"
+       sodipodi:cx="-391.33713"
+       sodipodi:cy="311.52496"
+       sodipodi:r1="967.5285"
+       sodipodi:r2="758.53247"
+       sodipodi:arg1="0.79543046"
+       sodipodi:arg2="1.5808286"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(0.09840404,0,0,0.02939162,-129.74544,88.254337)"
+       inkscape:transform-center-x="4.7322097e-06"
+       inkscape:transform-center-y="-8.1389233e-06"
+       d="m 285.91097,1002.4999 c -34.40309,33.7197 -636.68774,68.0026 -684.85778,67.5194 -48.17004,-0.4833 -649.64569,-46.8432 -683.36529,-81.24624 -33.7196,-34.40309 -68.0026,-636.68773 -67.5193,-684.85777 0.4832,-48.17005 46.8431,-649.64567 81.2462,-683.3653 34.4031,-33.71964 636.68771,-68.0026 684.85775,-67.51933 48.17004,0.48328 649.64566,46.84312 683.3653,81.24621 33.71964,34.40308 68.00259,636.68773 67.51932,684.85777 -0.48327,48.17004 -46.84311,649.64566 -81.2462,683.36526 z"
+       inkscape:export-filename="C:\Users\andre\desktop\LoadedQuestBar.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       sodipodi:type="star"
+       style="fill:url(#linearGradient22943-4);fill-opacity:1;stroke:url(#linearGradient20781-3);stroke-width:32.7084;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4449-5"
+       inkscape:flatsided="false"
+       sodipodi:sides="4"
+       sodipodi:cx="-391.33713"
+       sodipodi:cy="311.52496"
+       sodipodi:r1="967.5285"
+       sodipodi:r2="758.53247"
+       sodipodi:arg1="0.79543046"
+       sodipodi:arg2="1.5808286"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(0.09451655,0,0,0.02729151,-131.26676,88.908567)"
+       inkscape:transform-center-x="-1.4999359e-06"
+       inkscape:transform-center-y="-7.5878916e-06"
+       d="m 285.91097,1002.4999 c -34.40309,33.7197 -636.68774,68.0026 -684.85778,67.5194 -48.17004,-0.4833 -649.64569,-46.8432 -683.36529,-81.24624 -33.7196,-34.40309 -68.0026,-636.68773 -67.5193,-684.85777 0.4832,-48.17005 46.8431,-649.64567 81.2462,-683.3653 34.4031,-33.71964 636.68771,-68.0026 684.85775,-67.51933 48.17004,0.48328 649.64566,46.84312 683.3653,81.24621 33.71964,34.40308 68.00259,636.68773 67.51932,684.85777 -0.48327,48.17004 -46.84311,649.64566 -81.2462,683.36526 z"
+       inkscape:export-filename="C:\Users\andre\desktop\LoadedQuestBar.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       sodipodi:type="star"
+       style="fill:#00a600;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path18191-7"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="532.49847"
+       sodipodi:cy="337.70416"
+       sodipodi:r1="74.674103"
+       sodipodi:r2="52.802567"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(1.1216797,0,0,0.23635524,-765.54732,17.592407)"
+       inkscape:transform-center-x="-4.0434485e-05"
+       d="m 585.30104,390.50673 c -5.22719,5.22718 -100.37794,5.22718 -105.60513,0 -5.22719,-5.22719 -5.22719,-100.37794 0,-105.60513 5.22719,-5.22719 100.37794,-5.22719 105.60513,0 5.22719,5.22719 5.22719,100.37794 0,105.60513 z"
+       inkscape:export-filename="C:\Users\andre\desktop\miniloadedquestbar.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="star"
+       style="fill:url(#linearGradient26962);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path18191-7-6"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="532.49847"
+       sodipodi:cy="337.70416"
+       sodipodi:r1="74.674103"
+       sodipodi:r2="52.802567"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(1.1216797,0,0,0.23635524,-765.54732,17.592407)"
+       inkscape:transform-center-x="-4.0434485e-05"
+       d="m 585.30104,390.50673 c -5.22719,5.22718 -100.37794,5.22718 -105.60513,0 -5.22719,-5.22719 -5.22719,-100.37794 0,-105.60513 5.22719,-5.22719 100.37794,-5.22719 105.60513,0 5.22719,5.22719 5.22719,100.37794 0,105.60513 z"
+       inkscape:export-filename="C:\Users\andre\desktop\miniloadedquestbar.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="star"
+       style="fill:url(#linearGradient23941-7);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path18191-9-3"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="532.49847"
+       sodipodi:cy="337.70416"
+       sodipodi:r1="74.674103"
+       sodipodi:r2="52.802567"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(0.11726954,0,0,0.04106343,-284.19277,74.429512)"
+       inkscape:transform-center-x="-6.5901026e-06"
+       inkscape:transform-center-y="-1.1363546e-06"
+       d="m 585.30104,390.50673 c -5.22719,5.22718 -100.37794,5.22718 -105.60513,0 -5.22719,-5.22719 -5.22719,-100.37794 0,-105.60513 5.22719,-5.22719 100.37794,-5.22719 105.60513,0 5.22719,5.22719 5.22719,100.37794 0,105.60513 z"
+       inkscape:export-filename="C:\Users\andre\desktop\miniloadedquestbar.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="star"
+       style="fill:#183400;fill-opacity:1;stroke:none;stroke-width:32.7084;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4449-8-3-5"
+       inkscape:flatsided="false"
+       sodipodi:sides="4"
+       sodipodi:cx="-391.33713"
+       sodipodi:cy="311.52496"
+       sodipodi:r1="967.5285"
+       sodipodi:r2="758.53247"
+       sodipodi:arg1="0.79543046"
+       sodipodi:arg2="1.5808286"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(0.09840404,0,0,0.02939162,-297.70067,88.624)"
+       inkscape:transform-center-x="4.7322097e-06"
+       inkscape:transform-center-y="-8.1389233e-06"
+       d="m 285.91097,1002.4999 c -34.40309,33.7197 -636.68774,68.0026 -684.85778,67.5194 -48.17004,-0.4833 -649.64569,-46.8432 -683.36529,-81.24624 -33.7196,-34.40309 -68.0026,-636.68773 -67.5193,-684.85777 0.4832,-48.17005 46.8431,-649.64567 81.2462,-683.3653 34.4031,-33.71964 636.68771,-68.0026 684.85775,-67.51933 48.17004,0.48328 649.64566,46.84312 683.3653,81.24621 33.71964,34.40308 68.00259,636.68773 67.51932,684.85777 -0.48327,48.17004 -46.84311,649.64566 -81.2462,683.36526 z"
+       inkscape:export-filename="C:\Users\andre\desktop\unloadedquestbar.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       sodipodi:type="star"
+       style="fill:url(#linearGradient22943-4-6);fill-opacity:1;stroke:url(#linearGradient20781-3-8);stroke-width:32.7084;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path4449-5-5"
+       inkscape:flatsided="false"
+       sodipodi:sides="4"
+       sodipodi:cx="-391.33713"
+       sodipodi:cy="311.52496"
+       sodipodi:r1="967.5285"
+       sodipodi:r2="758.53247"
+       sodipodi:arg1="0.79543046"
+       sodipodi:arg2="1.5808286"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(0.09451655,0,0,0.02729151,-299.22199,89.27823)"
+       inkscape:transform-center-x="-1.4999359e-06"
+       inkscape:transform-center-y="-7.5878916e-06"
+       d="m 285.91097,1002.4999 c -34.40309,33.7197 -636.68774,68.0026 -684.85778,67.5194 -48.17004,-0.4833 -649.64569,-46.8432 -683.36529,-81.24624 -33.7196,-34.40309 -68.0026,-636.68773 -67.5193,-684.85777 0.4832,-48.17005 46.8431,-649.64567 81.2462,-683.3653 34.4031,-33.71964 636.68771,-68.0026 684.85775,-67.51933 48.17004,0.48328 649.64566,46.84312 683.3653,81.24621 33.71964,34.40308 68.00259,636.68773 67.51932,684.85777 -0.48327,48.17004 -46.84311,649.64566 -81.2462,683.36526 z"
+       inkscape:export-filename="C:\Users\andre\desktop\unloadedquestbar.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       sodipodi:type="star"
+       style="fill:#00a600;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path18191-7-1"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="532.49847"
+       sodipodi:cy="337.70416"
+       sodipodi:r1="74.674103"
+       sodipodi:r2="52.802567"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(1.1216797,0,0,0.23635524,-933.50255,17.96207)"
+       inkscape:transform-center-x="-4.0434485e-05"
+       d="m 585.30104,390.50673 c -5.22719,5.22718 -100.37794,5.22718 -105.60513,0 -5.22719,-5.22719 -5.22719,-100.37794 0,-105.60513 5.22719,-5.22719 100.37794,-5.22719 105.60513,0 5.22719,5.22719 5.22719,100.37794 0,105.60513 z"
+       inkscape:export-filename="C:\Users\andre\desktop\unloadedquestbar.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       sodipodi:type="star"
+       style="fill:url(#linearGradient27716);fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path18191-7-6-9"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="532.49847"
+       sodipodi:cy="337.70416"
+       sodipodi:r1="74.674103"
+       sodipodi:r2="52.802567"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.5707963"
+       inkscape:rounded="0.07"
+       inkscape:randomized="0"
+       transform="matrix(1.1216797,0,0,0.23635524,-933.50255,17.96207)"
+       inkscape:transform-center-x="-4.0434485e-05"
+       d="m 585.30104,390.50673 c -5.22719,5.22718 -100.37794,5.22718 -105.60513,0 -5.22719,-5.22719 -5.22719,-100.37794 0,-105.60513 5.22719,-5.22719 100.37794,-5.22719 105.60513,0 5.22719,5.22719 5.22719,100.37794 0,105.60513 z"
+       inkscape:export-filename="C:\Users\andre\desktop\unloadedquestbar.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+  </g>
+</svg>
