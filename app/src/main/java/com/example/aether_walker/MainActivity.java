@@ -21,25 +21,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private boolean running, loggedin;
     private float totalSteps;
     private float previousTotalSteps;
-
     public TextView tv_stepsTaken;
-
-    public ImageView bckrnd_Img_stepsTaken, step_Img_Progress_Bar, step_Img_Progress_Bar_Overlay;
-
+    public ImageView character_img, bckrnd_Img_stepsTaken, step_Img_Progress_Bar, step_Img_Progress_Bar_Overlay;
     public Button debug_stepbutton;
-
     public ValueAnimator CounterAnim;
-
     private Sensor backgroundStepSensor, stepDetectorSensor;
-
     public SensorEventListener stepSensorEventListener;
-
-    public int stepsFromQuest, reqStepsFromQuest, userGold, userCrystal, previousStep, currentStep, debugQuestSteps;
-
+    public int stepsFromQuest, reqStepsFromQuest, userGold, userCrystal, previousStep, currentStep,
+            debugQuestSteps, debugCharacterImgIndxCycler;
     public String userName;
 
-    //Declare Methods
+    //Temp character cycle arry
+    public int[] characterCycleArry = {R.drawable.alumine_mwalk,R.drawable.alumine_lwalk,
+            R.drawable.alumine_mwalk,R.drawable.alumine_rwalk};
 
+    //Declare Methods
     //This method runs the counter animation when totalSteps is updated
     public String runCounterAnim() {
         //Below block of code makes the counter animation
@@ -66,12 +62,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
 
         //TEMP STEP PARAMS
-        totalSteps = 3;
+        totalSteps = 0;
         debugQuestSteps = 25;
+        debugCharacterImgIndxCycler = 0;
 
         //Initialize Views & add Related Methods:
         step_Img_Progress_Bar_Overlay = this.findViewById(R.id.step_Img_Progress_Bar_Overlay);
         step_Img_Progress_Bar = this.findViewById(R.id.step_Img_Progress_Bar);
+        character_img = this.findViewById(R.id.character_img);
 
 
         tv_stepsTaken = this.findViewById(R.id.tv_dailystepsTaken);
@@ -84,13 +82,24 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         //Passive step sensor
         backgroundStepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+        sensorManager.registerListener(this, backgroundStepSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
         //Active step trigger sensor to update steps
         stepDetectorSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
+        sensorManager.registerListener(this, stepDetectorSensor, SensorManager.SENSOR_DELAY_NORMAL);
 
         debug_stepbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 totalSteps++;
+
+                //temp block of code to cycle through debugCharacterImgIndxCycler
+                if (debugCharacterImgIndxCycler < 3){
+                    debugCharacterImgIndxCycler++;
+                }else{
+                    debugCharacterImgIndxCycler = 0;
+                }
 
                 currentStep = Math.round(totalSteps);
                 previousStep = currentStep-1;
@@ -99,6 +108,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
                 step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
                 Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
+
+                character_img.setImageResource(characterCycleArry[debugCharacterImgIndxCycler]);
+                Log.d("DATAOFCHARECTERCYCLE", Integer.toString(debugCharacterImgIndxCycler));
             }
         });
 
@@ -109,9 +121,25 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         if (sensorEvent.sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
-            TextView tv_stepsTaken = this.findViewById(R.id.tv_dailystepsTaken);
             totalSteps++;
-            tv_stepsTaken.setText((String.valueOf(totalSteps)));
+
+            //temp block of code to cycle through debugCharacterImgIndxCycler
+            if (debugCharacterImgIndxCycler < 3){
+                debugCharacterImgIndxCycler++;
+            }else{
+                debugCharacterImgIndxCycler = 0;
+            }
+
+            currentStep = Math.round(totalSteps);
+            previousStep = currentStep-1;
+
+            Log.i("STEPLOG", runCounterAnim());
+            int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
+            step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
+            Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
+
+            character_img.setImageResource(characterCycleArry[debugCharacterImgIndxCycler]);
+            Log.d("DATAOFCHARECTERCYCLE", Integer.toString(debugCharacterImgIndxCycler));
         }
     }
 

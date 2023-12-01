@@ -20,7 +20,7 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:text="0"
-        android:layout_marginTop="50sp"/>
+        android:layout_marginTop="170sp"/>
 
     <ImageView
         android:id="@+id/step_Img_Progress_Bar_Overlay"
@@ -31,7 +31,7 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:text="0"
-        android:layout_marginTop="64sp"/>
+        android:layout_marginTop="184sp"/>
 
     <ImageView
         android:id="@+id/bckrnd_img_stepsTaken"
@@ -42,6 +42,17 @@
         android:text="0"
         android:layout_marginTop="190sp"/>
 
+    <ImageView
+        android:id="@+id/character_img"
+        android:src="@drawable/alumine_lwalk"
+        android:scaleType="centerInside"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_marginTop="450sp"/>
+
     <TextView
         android:id="@+id/tv_dailystepsTaken"
         android:layout_width="wrap_content"
@@ -49,15 +60,16 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:text="0"
-        android:textSize="56dp"
+        android:textSize="64dp"
+        android:textColor="@color/Almost_black"
         android:fontFamily="@font/samuraiblast"
-        android:layout_marginTop="190sp"/>
+        android:layout_marginTop="90sp"/>
 
     <Button
         android:id="@+id/debug_stepbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="525sp"
+        android:layout_marginTop="600sp"
         android:text="Fakestep"
         android:gravity="center"
         android:layout_centerHorizontal="true"/>
