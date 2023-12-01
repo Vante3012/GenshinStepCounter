@@ -36,6 +36,31 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             R.drawable.alumine_mwalk,R.drawable.alumine_rwalk};
 
     //Declare Methods
+
+    //Temp void method for Degub(use of fakestep)
+    public void debugSenseSteps(){
+        totalSteps++;
+
+        //temp block of code to cycle through debugCharacterImgIndxCycler
+        if (debugCharacterImgIndxCycler < 3){
+            debugCharacterImgIndxCycler++;
+        }else{
+            debugCharacterImgIndxCycler = 0;
+        }
+
+        currentStep = Math.round(totalSteps);
+        previousStep = currentStep-1;
+
+        Log.i("STEPLOG", runCounterAnim());
+        int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
+        step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
+        Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
+
+        character_img.setImageResource(characterCycleArry[debugCharacterImgIndxCycler]);
+        Log.d("DATAOFCHARECTERCYCLE", Integer.toString(debugCharacterImgIndxCycler));
+    };
+
+
     //This method runs the counter animation when totalSteps is updated
     public String runCounterAnim() {
         //Below block of code makes the counter animation
@@ -63,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         //TEMP STEP PARAMS
         totalSteps = 0;
-        debugQuestSteps = 25;
+        debugQuestSteps = 20;
         debugCharacterImgIndxCycler = 0;
 
         //Initialize Views & add Related Methods:
@@ -88,29 +113,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         stepDetectorSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
         sensorManager.registerListener(this, stepDetectorSensor, SensorManager.SENSOR_DELAY_NORMAL);
 
+        //TEMP debug_stepbutton onclick listener
         debug_stepbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                totalSteps++;
-
-                //temp block of code to cycle through debugCharacterImgIndxCycler
-                if (debugCharacterImgIndxCycler < 3){
-                    debugCharacterImgIndxCycler++;
-                }else{
-                    debugCharacterImgIndxCycler = 0;
-                }
-
-                currentStep = Math.round(totalSteps);
-                previousStep = currentStep-1;
-
-                Log.i("STEPLOG", runCounterAnim());
-                int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
-                step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
-                Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
-
-                character_img.setImageResource(characterCycleArry[debugCharacterImgIndxCycler]);
-                Log.d("DATAOFCHARECTERCYCLE", Integer.toString(debugCharacterImgIndxCycler));
+                debugSenseSteps();
             }
         });
 
@@ -121,25 +128,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         if (sensorEvent.sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
-            totalSteps++;
-
-            //temp block of code to cycle through debugCharacterImgIndxCycler
-            if (debugCharacterImgIndxCycler < 3){
-                debugCharacterImgIndxCycler++;
-            }else{
-                debugCharacterImgIndxCycler = 0;
-            }
-
-            currentStep = Math.round(totalSteps);
-            previousStep = currentStep-1;
-
-            Log.i("STEPLOG", runCounterAnim());
-            int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
-            step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
-            Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
-
-            character_img.setImageResource(characterCycleArry[debugCharacterImgIndxCycler]);
-            Log.d("DATAOFCHARECTERCYCLE", Integer.toString(debugCharacterImgIndxCycler));
+            debugSenseSteps();
         }
     }
 
