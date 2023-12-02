@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quest_light_gold">
+
+    <TextView
+        android:id="@+id/xp_from_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="42dp"
+        android:textColor="@color/almost_black"
+        android:fontFamily="@font/samuraiblast"
+        android:layout_marginTop="100sp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/moria_from_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="42dp"
+        android:textColor="@color/almost_black"
+        android:fontFamily="@font/samuraiblast"
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="35sp"/>
+
+    <TextView
+        android:id="@+id/primeGems_from_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="42dp"
+        android:textColor="@color/almost_black"
+        android:fontFamily="@font/samuraiblast"
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="280sp"/>
+
+</RelativeLayout>

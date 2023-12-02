@@ -3,23 +3,30 @@ package com.example.aether_walker;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
     //Declare Variables
+    public Intent QuestEndScreen;
     private SensorManager sensorManager;
     private boolean running, loggedin;
-    private float totalSteps;
+    private float totalStepsOfQuest;
     private float previousTotalSteps;
     public TextView tv_stepsTaken;
     public ImageView character_img, bckrnd_Img_stepsTaken, step_Img_Progress_Bar, step_Img_Progress_Bar_Overlay;
@@ -35,11 +42,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public int[] characterCycleArry = {R.drawable.alumine_mwalk,R.drawable.alumine_lwalk,
             R.drawable.alumine_mwalk,R.drawable.alumine_rwalk};
 
-    //Declare Methods
-
-    //Temp void method for Degub(use of fakestep)
+    //Declare Method Constructors
+    //Temp void method for Degub(use of fakestep & Temp Sensor stepmethod)
     public void debugSenseSteps(){
-        totalSteps++;
+        totalStepsOfQuest++;
 
         //temp block of code to cycle through debugCharacterImgIndxCycler
         if (debugCharacterImgIndxCycler < 3){
@@ -48,17 +54,48 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             debugCharacterImgIndxCycler = 0;
         }
 
-        currentStep = Math.round(totalSteps);
+        currentStep = Math.round(totalStepsOfQuest);
         previousStep = currentStep-1;
 
         Log.i("STEPLOG", runCounterAnim());
-        int questBarprog = (Math.round((totalSteps/debugQuestSteps)*10000));   // pct goes from 0 to 100
+        int questBarprog = (Math.round((totalStepsOfQuest /debugQuestSteps)*10000));   // pct goes from 0 to 100
         step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
         Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
 
         character_img.setImageResource(characterCycleArry[debugCharacterImgIndxCycler]);
         Log.d("DATAOFCHARECTERCYCLE", Integer.toString(debugCharacterImgIndxCycler));
+
+        if(debugQuestSteps==totalStepsOfQuest){
+            popupQuestComplete();
+        }
     };
+
+    //This method allows a popup window upon quest completion
+    public void popupQuestComplete() {
+
+        // Inflate the layout of the popup window
+        LayoutInflater inflater = (LayoutInflater)getSystemService(LAYOUT_INFLATER_SERVICE);
+        View popupView = inflater.inflate(R.layout.quest_sucess_popup, null);
+
+        // create the popup window
+        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        boolean focusable = true; // lets taps outside the popup also dismiss it
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+        // show the popup window in this view
+        popupWindow.showAtLocation(findViewById(android.R.id.content).getRootView(), Gravity.CENTER, 0, 0);
+
+        // dismiss the popup window when screen is touched
+        popupView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                popupWindow.dismiss();
+                MainActivity.this.startActivity(QuestEndScreen);
+                return true;
+            }
+        });
+    }
 
 
     //This method runs the counter animation when totalSteps is updated
@@ -80,6 +117,25 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         return LogString;
     }
 
+    //Adds a step whenever stepDetectorSensor is activated
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
+        if (sensorEvent.sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
+            debugSenseSteps();
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    //Resumes step counter if sensor is on phone
+    protected void onResume() {
+        super.onResume();
+        this.running = true;
+    }
+
     //OnCreate Method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,9 +143,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
 
         //TEMP STEP PARAMS
-        totalSteps = 0;
-        debugQuestSteps = 20;
+        totalStepsOfQuest = 0;
+        debugQuestSteps = 10;
         debugCharacterImgIndxCycler = 0;
+
+        //Initialize Intent
+        QuestEndScreen = new Intent(this, QuestEndScreen.class);
 
         //Initialize Views & add Related Methods:
         step_Img_Progress_Bar_Overlay = this.findViewById(R.id.step_Img_Progress_Bar_Overlay);
@@ -121,25 +180,5 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         });
 
-    }
-
-
-    //Adds a step whenever stepDetectorSensor is activated
-    @Override
-    public void onSensorChanged(SensorEvent sensorEvent) {
-        if (sensorEvent.sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
-            debugSenseSteps();
-        }
-    }
-
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
-    }
-
-    //Resumes step counter if sensor is on phone
-    protected void onResume() {
-        super.onResume();
-        this.running = true;
     }
 }

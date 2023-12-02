@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AetherWalker"
         tools:targetApi="34">
         <activity
+            android:name=".QuestEndScreen"
+            android:exported="false" />
+        <activity
             android:name=".ActiveQuestScreen"
             android:exported="false" />
         <activity
