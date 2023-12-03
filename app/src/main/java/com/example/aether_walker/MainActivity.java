@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private boolean running, loggedin;
     private float totalStepsOfQuest;
     private float previousTotalSteps;
-    public TextView tv_stepsTaken;
+    public TextView tv_stepsTaken, questName_tv;
     public ImageView character_img, bckrnd_Img_stepsTaken, step_Img_Progress_Bar, step_Img_Progress_Bar_Overlay;
     public Button debug_stepbutton;
     public ValueAnimator CounterAnim;
@@ -63,8 +63,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         currentStep = Math.round(totalStepsOfQuest);
         previousStep = currentStep-1;
 
+        //Runs counters and logs them
         Log.i("STEPLOG", runCounterAnim());
-        int questBarprog = (Math.round((totalStepsOfQuest /debugQuestSteps)*10000));   // pct goes from 0 to 100
+        int questBarprog = (Math.round((totalStepsOfQuest/debugQuestSteps)*10000));   // pct goes from 0 to 100
         step_Img_Progress_Bar_Overlay.getBackground().setLevel(questBarprog);
         Log.d("DATAOFBARPROG", Integer.toString(questBarprog));
 
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if(debugQuestSteps==totalStepsOfQuest){
             popupQuestComplete();
         }
-    };
+    }
 
     //This method allows a popup window upon quest completion
     public void popupQuestComplete() {
@@ -156,10 +157,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         //Code snippet below clears the flag and allow the phone to go to sleep
         //getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //TEMP STEP PARAMS
+        //TEMP STEP PARAMS ------------------------------------------------------------
+
+
+
+
+
         totalStepsOfQuest = 0;
         debugQuestSteps = 10;
         debugCharacterImgIndxCycler = 0;
+
+
+
+
+        //NOTE: Values above should be pulled from "Quest Select" Activity with Intent and DB!
+        //The button "Quests" in main menu should take you to this. (Not implemented yet)-------
 
         //Initialize Intent
         QuestEndScreen = new Intent(this, QuestEndScreen.class);

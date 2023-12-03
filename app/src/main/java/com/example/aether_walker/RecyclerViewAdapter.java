@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
 
-    private ArrayList<RecyclerData> courseDataArrayList;
-    private Context mcontext;
+    private final ArrayList<RecyclerData> courseDataArrayList;
+    private final Context mcontext;
 
     public RecyclerViewAdapter(ArrayList<RecyclerData> recyclerDataArrayList, Context mcontext) {
         this.courseDataArrayList = recyclerDataArrayList;
@@ -45,8 +45,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     // View Holder Class to handle Recycler View.
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView courseTV;
-        private ImageView courseIV;
+        private final TextView courseTV;
+        private final ImageView courseIV;
 
         public RecyclerViewHolder(@NonNull View itemView) {
             super(itemView);

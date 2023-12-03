@@ -64,6 +64,18 @@
         android:fontFamily="@font/samuraiblast"
         android:layout_marginTop="90sp"/>
 
+    <TextView
+        android:id="@+id/questName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Quest of Berries"
+        android:textSize="32dp"
+        android:textColor="@color/almost_black"
+        android:fontFamily="@font/kenarose"
+        android:layout_marginTop="15sp"/>
+
     <Button
         android:id="@+id/debug_stepbutton"
         android:layout_width="wrap_content"
