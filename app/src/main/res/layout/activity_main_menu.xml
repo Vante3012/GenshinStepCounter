@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/background_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tavern_background_ai_bard"
+        android:scaleType="centerCrop"
+        android:cropToPadding="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_white_80"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_black_30"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/total_Daily_Steps_Bckrnd_Clr"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_info"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/total_Daily_Steps"
+        android:layout_width="215dp"
+        android:layout_height="275dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignTop="@+id/total_Daily_Steps_Bckrnd_Clr">
+
+        <TextView
+            android:id="@+id/daily_steps_total"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="20,000"
+            android:textSize="42dp"
+            android:textColor="@color/almost_black"
+            android:fontFamily="@font/samuraiblast"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/total_user_xp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:layout_marginTop="35dp"
+            android:text="lv.45"
+            android:textSize="52dp"
+            android:textColor="@color/almost_black"
+            android:fontFamily="@font/samuraiblast"
+            android:layout_centerHorizontal="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moria_Bckrnd_Clr"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="15dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_info"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moria_Bckrnd"
+        android:layout_width="85dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"
+        android:layout_alignTop="@+id/moria_Bckrnd_Clr">
+
+    <TextView
+        android:id="@+id/total_Moria_Tv"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:text="100,450"
+        android:textSize="22dp"
+        android:textColor="@color/almost_black"
+        android:fontFamily="@font/samuraiblast"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/prime_Crystal_Bckrnd"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_info"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/prime_Crystal_Bckrnd_Clr"
+        android:layout_width="85dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:layout_alignTop="@+id/prime_Crystal_Bckrnd">
+        <TextView
+            android:id="@+id/total_Prime_Gems_Tv"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="30"
+            android:textSize="22dp"
+            android:textColor="@color/almost_black"
+            android:fontFamily="@font/samuraiblast"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/User_Quests"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_green"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/prime_Crystal_Bckrnd"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_info"
+        />
+</RelativeLayout>

@@ -14,6 +14,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -40,18 +41,23 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     //Temp character cycle arry
     public int[] characterCycleArry = {R.drawable.alumine_mwalk,R.drawable.alumine_lwalk,
-            R.drawable.alumine_mwalk,R.drawable.alumine_rwalk};
+            R.drawable.alumine_mwalk,R.drawable.alumine_rwalk,R.drawable.aluminef};
 
     //Declare Method Constructors
     //Temp void method for Degub(use of fakestep & Temp Sensor stepmethod)
     public void debugSenseSteps(){
+
         totalStepsOfQuest++;
 
-        //temp block of code to cycle through debugCharacterImgIndxCycler
-        if (debugCharacterImgIndxCycler < 3){
-            debugCharacterImgIndxCycler++;
+        //temp block of code to cycle through debugCharacterImgIndxCycler if quest isn't complete
+        if (totalStepsOfQuest<debugQuestSteps) {
+            if (debugCharacterImgIndxCycler < 3) {
+                debugCharacterImgIndxCycler++;
+            } else {
+                debugCharacterImgIndxCycler = 0;
+            }
         }else{
-            debugCharacterImgIndxCycler = 0;
+            debugCharacterImgIndxCycler = 4;
         }
 
         currentStep = Math.round(totalStepsOfQuest);
@@ -80,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
-        boolean focusable = true; // lets taps outside the popup also dismiss it
+        boolean focusable = false; // lets taps outside the popup also dismiss it
         final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
 
         // show the popup window in this view
@@ -91,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 popupWindow.dismiss();
+                //Puts key intent of totalStepsOfQuest for sending to next activity
+                QuestEndScreen.putExtra("totalStepsOfQuest", Math.round(totalStepsOfQuest));
                 MainActivity.this.startActivity(QuestEndScreen);
                 return true;
             }
@@ -139,8 +147,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     //OnCreate Method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Keeps app from going to sleep as long as this activity is active.
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        //Code snippet below clears the flag and allow the phone to go to sleep
+        //getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //TEMP STEP PARAMS
         totalStepsOfQuest = 0;
@@ -154,7 +168,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         step_Img_Progress_Bar_Overlay = this.findViewById(R.id.step_Img_Progress_Bar_Overlay);
         step_Img_Progress_Bar = this.findViewById(R.id.step_Img_Progress_Bar);
         character_img = this.findViewById(R.id.character_img);
-
 
         tv_stepsTaken = this.findViewById(R.id.tv_dailystepsTaken);
         bckrnd_Img_stepsTaken = this.findViewById(R.id.bckrnd_img_stepsTaken);

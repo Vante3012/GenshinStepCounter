@@ -3,6 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="almost_black">#F2191717</color>
-    <color name="transparent_black">#30000000</color>
+    <color name="transparent_black_30">#30000000</color>
+    <color name="transparent_black_80">#95000000</color>
+    <color name="transparent_white_80">#95FFFFFF</color>
     <color name="quest_light_gold">#68FDF38E</color>
+    <color name="home_bckgrnd_info">#DAD3C0</color>
+    <color name="home_bckgrnd_green">#C0D5AC</color>
 </resources>
