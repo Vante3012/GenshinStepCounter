@@ -140,6 +140,8 @@ public class Main_Menu extends AppCompatActivity {
         //Initialize Objects and Methods Below
 
         //Initialize DbHelper and db for this activity
+
+        /*
         DBHelper myDbHelper = new DBHelper(this);
         try {
             myDbHelper.createDataBase();
@@ -151,6 +153,8 @@ public class Main_Menu extends AppCompatActivity {
         } catch (SQLException sqle) {
         }
         db = myDbHelper.getWritableDatabase();
+
+        */
 
         //NOTE:
         //Temp Values to be pulled from DB
