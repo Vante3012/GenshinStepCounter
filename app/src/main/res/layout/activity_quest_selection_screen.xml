@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Below is the "Background + Blur" effect design -->
+
+    <ImageView
+        android:id="@+id/background_Img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tavern_background_ai_bard"
+        android:scaleType="centerCrop"
+        android:cropToPadding="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_black_80"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_white_80"/>
+
+    <!-- Below is the "Quest" ImageView design -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Quest_Select_Bckrnd_Clr"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_info"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Quest_Select"
+        android:layout_width="310dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignTop="@+id/Quest_Select_Bckrnd_Clr">
+
+        <ImageView
+            android:id="@+id/Quest_Select_Ico"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/scroll_ico"/>
+
+        <TextView
+            android:id="@+id/Quest_Select_Name_Txt"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Quest Of Berries"
+            android:textSize="42dp"
+            android:textColor="@color/almost_black"
+            android:fontFamily="@font/kenarose"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Quest_Select_Steps_Needed"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135sp"
+            android:textAlignment="center"
+            android:text="200 Steps"
+            android:textSize="42dp"
+            android:textColor="@color/almost_black"
+            android:fontFamily="@font/samuraiblast"
+            android:layout_centerHorizontal="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Below is the "Next Quest" button design -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="520dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_green"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/next_quest"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="530dp"
+        android:scaleType="centerCrop"
+        >
+        <ImageView
+            android:src="@drawable/ico_arrow_right"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Below is the "Previous Quest" button design -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cancel_quest_select"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="530dp"
+        android:scaleType="centerCrop"
+        >
+        <ImageView
+            android:src="@drawable/ico_arrow_right"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Below is the "Previous Quest" button design -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="520dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_green"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/previous_quest"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="530dp"
+        android:scaleType="centerCrop"
+        >
+        <ImageView
+            android:src="@drawable/ico_arrow_left"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Below is the "Select" button design -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="520dp"
+        app:cardBackgroundColor="@color/home_bckgrnd_green"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/selected_quest"
+        android:layout_centerHorizontal="true"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="530dp"
+        android:scaleType="centerCrop"
+        >
+        <ImageView
+            android:src="@drawable/ico_check"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

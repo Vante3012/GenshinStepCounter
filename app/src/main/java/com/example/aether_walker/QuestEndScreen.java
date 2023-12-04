@@ -28,7 +28,6 @@ import java.util.TimerTask;
 public class QuestEndScreen extends AppCompatActivity {
 
     //Declare Variables
-
     public Intent MainActivity, ActiveQuestScreen, QuestEndScreen, Main_Menu;
     public ValueAnimator stepsAnim, XPAnim, moriaAnim, primeGemAnim;
     public static ValueAnimator CounterAnimObj;
@@ -226,7 +225,7 @@ public class QuestEndScreen extends AppCompatActivity {
 
         //Method sends popup to the user after 5k ms via CountDownTimer
         //to send them back to the main menu & logs loot to database as well
-        CountDownTimer waitFor = new CountDownTimer(4000, 1000){
+        CountDownTimer waitFor = new CountDownTimer(3000, 1000){
             @Override
             public void onTick(long millisUntilFinished) {
                 //Empty as we wait for the timer to run out

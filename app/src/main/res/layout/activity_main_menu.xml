@@ -165,7 +165,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/user_quest"
+        android:id="@+id/user_quest_Bckrnd_Clr"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:cardCornerRadius="20dp"
@@ -176,14 +176,14 @@
         />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/user_quest_Bckrnd_Clr"
+        android:id="@+id/user_quest"
         android:layout_width="75dp"
         android:layout_height="75dp"
         app:cardCornerRadius="20dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="28dp"
         android:layout_marginTop="12dp"
-        android:layout_alignTop="@+id/user_quest"
+        android:layout_alignTop="@+id/user_quest_Bckrnd_Clr"
         >
         <ImageView
             android:src="@drawable/scroll_ico"
@@ -221,7 +221,7 @@
         app:cardCornerRadius="20dp"
         android:layout_marginLeft="26dp"
         android:layout_marginTop="12dp"
-        android:layout_alignTop="@+id/user_quest"
+        android:layout_alignTop="@+id/daily_chest_bckrnd"
         >
         <ImageView
             android:src="@drawable/treasure_ico"
@@ -293,7 +293,7 @@
         />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/shop"
+        android:id="@+id/user_shop"
         android:layout_width="75dp"
         android:layout_height="75dp"
         app:cardCornerRadius="20dp"

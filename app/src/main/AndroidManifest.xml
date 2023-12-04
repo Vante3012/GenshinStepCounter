@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AetherWalker"
         tools:targetApi="34">
         <activity
-            android:name=".Main_Menu"
+            android:name=".QuestSelectionScreen"
             android:exported="false" />
         <activity
             android:name=".QuestEndScreen"
@@ -25,13 +25,10 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"></activity>
+        <activity
+            android:name=".Main_Menu"
+            android:exported="true" />
     </application>
 
 </manifest>
