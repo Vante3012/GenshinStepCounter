@@ -50,7 +50,8 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:text="0"
-        android:layout_marginTop="450sp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
 
     <TextView
         android:id="@+id/tv_dailystepsTaken"
