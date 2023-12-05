@@ -202,9 +202,6 @@ public class Main_Menu extends AppCompatActivity {
 
 
 
-
-
-
                 //Nothing happens if the user already opened the daily
             }
         });

@@ -47,10 +47,11 @@
         android:scaleType="centerInside"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:gravity="center"
         android:layout_centerHorizontal="true"
         android:text="0"
-        android:layout_marginTop="450sp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        />
 
     <TextView
         android:id="@+id/tv_dailystepsTaken"

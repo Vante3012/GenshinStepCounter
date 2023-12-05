@@ -16,7 +16,7 @@ import java.io.OutputStream;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static String DB_PATH = "/data/data/com.example.aether_walker.databases/databases/";
-    private static String DB_NAME = "AetherDb.db";
+    private static String DB_NAME = "AetherDb";
     private SQLiteDatabase db;
     private Context myContext;
 
@@ -55,7 +55,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return checkDB != null? true : false;
     }
 
-    private void copyDataBase() throws IOException {
+    public void copyDataBase() throws IOException {
         //Open your local db as the input file
         InputStream myInput = myContext.getAssets().open(DB_NAME + ".db");
         // Path to the just created empty db
@@ -79,7 +79,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void openDataBase() throws SQLException {
 
         //Open the database
-        String myPath = DB_PATH+DB_NAME;
+        String myPath = DB_PATH + DB_NAME;
         db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
     }
 

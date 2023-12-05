@@ -12,24 +12,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:text="Proceed with loot!"
+        android:textSize="42sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="Invalid Login"
         android:textColor="@color/white"
         android:fontFamily="@font/kenarose"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="75dp"
         android:layout_centerHorizontal="true"
-        android:textSize="14sp"
-        android:text="(Tap)"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="(Please Try Again)"
         android:textColor="@color/white"
         android:fontFamily="@font/kenarose"/>
-
 </RelativeLayout>
