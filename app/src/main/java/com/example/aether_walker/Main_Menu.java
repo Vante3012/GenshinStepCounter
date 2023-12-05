@@ -25,10 +25,10 @@ public class Main_Menu extends AppCompatActivity {
     public static SQLiteDatabase db;
     DBHelper myDBhelper;
     private Calendar calendar;
-    private Intent QuestSelectionScreen;
+    private Intent QuestSelectionScreen, InventoryScreen,CharacterSelect;
     private ValueAnimator userTotalStepsAnim, userTotalMoriaAnim, userTotalCrystalAnim, userTotalXPAnim;
     private ImageView character_img, bckrnd_Img_stepsTaken, step_Img_Progress_Bar, step_Img_Progress_Bar_Overlay;
-    private CardView daily_chest,user_quest,user_inventory,user_shop;
+    private CardView daily_chest,user_quest,user_inventory,user_shop,character_card_view;
     private TextView total_Moria_Tv, total_Prime_Gems_Tv, daily_steps_total_Tv, total_user_Xp_Tv;
     public int userTotalSteps, userTotalMoria, userTotalCrystal, userTotalXp, currentStep;
 
@@ -178,12 +178,14 @@ public class Main_Menu extends AppCompatActivity {
 
         //Initialize Intent
         QuestSelectionScreen = new Intent(this, QuestSelectionScreen.class);
-
+        InventoryScreen = new Intent(this, WeaponsActivity.class );
+        CharacterSelect=new Intent(this,CharacterSelect.class);
         //Initialize Card Views
         daily_chest = this.findViewById(R.id.daily_chest);
         user_quest = this.findViewById(R.id.user_quest);
         user_inventory = this.findViewById(R.id.user_inventory);
         user_shop = this.findViewById(R.id.user_shop);
+        character_card_view=this.findViewById(R.id.character_card_view);
 
         //onClickMethods for the cardviews
         daily_chest.setOnClickListener(new View.OnClickListener() {
@@ -215,12 +217,15 @@ public class Main_Menu extends AppCompatActivity {
                 Main_Menu.this.startActivity(QuestSelectionScreen);
             }
         });
-
-        user_inventory.setOnClickListener(new View.OnClickListener() {
+        character_card_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Main_Menu.this.startActivity(CharacterSelect);
             }
+        });
+        user_inventory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {Main_Menu.this.startActivity(InventoryScreen);}
         });
 
         user_shop.setOnClickListener(new View.OnClickListener() {
