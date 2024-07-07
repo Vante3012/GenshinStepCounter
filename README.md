@@ -1,6 +1,9 @@
 **Aether Walker**
 
 An RPG—ifyied step counter made for a Junior android app development class.
+More info about this app and the presentation used for a grade in the class can be found here:
+
+https://docs.google.com/presentation/d/19IX74As1yigqKoivkUYMhBcL_V0x8o4pvHNLGTrgVhU/edit?usp=sharing
 
 ![ae_logo](https://github.com/Vante3012/GenshinStepCounter/assets/49324678/9c58766b-af6e-4d4c-aeb4-e592d7ed0a5d)
 
